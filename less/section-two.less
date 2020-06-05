@@ -1,0 +1,58 @@
+.two {
+    background-color: @bg-presentation;
+    min-height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    position: relative;
+}
+
+.black-h2 {
+    width: 100%;
+    font-family: Raleway;
+    .txt(#555555, 30px, 600);
+    text-align: center;
+    padding-top: 83px;
+}
+
+.black-p {
+    width: 100%;
+    font-family: Montserrat;
+    .txt(#8c8c8c, 16px, 300);
+    text-align: center;
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+
+.br-left {
+    position: absolute;
+    left: 347px;
+    top: 300px;
+    transition: 2s;
+    opacity: 0.6;
+
+    &:hover {
+        z-index: 2;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+.br-right {
+    position: absolute;
+    right: 343px;
+    top: 300px;
+    transition: 2s;
+    opacity: 0.6;
+
+    &:hover {
+        z-index: 2;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.br-center {
+    z-index: 1;
+}

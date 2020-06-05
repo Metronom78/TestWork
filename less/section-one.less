@@ -1,0 +1,61 @@
+.one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 89px;
+    margin-bottom: 66px;
+}
+
+.plitka {
+    width: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 50px;
+
+    &-svg {
+        fill: #555555;
+    }
+
+    &-span {
+        width: 100%;
+        font-family: Raleway;
+        .txt(#555555, 22px, 600);
+        padding-top: 29px;
+    }
+
+    &-p {
+        font-family: Montserrat;
+        width: 100%;
+        .txt(#8c8c8c, 14px, 300);
+        padding-top: 9px;
+        padding-bottom: 20px;
+    }
+
+    &:after {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: #555555;
+        opacity: 0.2;
+    }
+}
+
+.plitka:hover svg {
+    fill: #c7b299;
+
+    &:hover:after {
+        background-color: #c7b299;
+    }
+}
+
+.plitka:hover span {
+    color: #c7b299;
+}
+
+.plitka:hover:after {
+    background-color: #c7b299;
+    opacity: 1;
+}

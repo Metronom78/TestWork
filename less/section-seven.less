@@ -1,0 +1,40 @@
+.seven {
+    background: @bg-gradient;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.plitka-widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 170px;
+    margin: 60px 15px;
+    &:after {
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: #ffffff;
+        margin-top: 30px;
+    }
+    
+}
+.plitka-widget svg {
+    fill: #c7b299;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 23px;
+}
+.plitka-widget span {
+    font-family: Montserrat;
+    .txt(#ffffff, 48px, 200);
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.plitka-widget p {
+    font-family: Montserrat;
+    .txt(#c7b299, 14px, 300);
+    text-align: center;
+    width: 100%;
+}
